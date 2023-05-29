@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Online Booking</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!-- title of the webpage-->
+<div id="header">
+   <img class="header" src="header.png">
+</div> <br>
+<!-- this is the nav bar-->
+<div class="navbar">
+    <a href="index.html"> <button type="button"> Home </button></a>
+    <a href="C:\Users\Welcome2022\Desktop\Online booking system\form\form.html"> <button type="button">BOOK HERE</button> </a>
+</div> 
+<!-- content of the webpage-->
+<center>
+<h1> Video introduction </h1>
+<div class="video1">
+ <video width="100%" height="70%" src= "video.mp4"  controls>
+ </video>
+</div> </center> <br> 
+<h1> pictures And Pricelist of the Beach resort</h1>
+<div id="column">
+   <div class="content1">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="img1.png" style="height:500px; width:650px;" >
+            <div class="text"> ROOM 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="img2.png" style="height:500px; width:650px;">
+            <div class="text">ROOM 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="img3.png" style="height:500px; width:650px;">
+            <div class="text">ROOM 3</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="img4.jpg" style="height:500px; width:650px;">
+            <div class="text">Cottage 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="img5.jpg" style="height:500px; width:650px;">
+            <div class="text">Cottage 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="img6.jpg" style="height:500px; width:650px;">
+            <div class="text"> Bangka </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+</div>
+
+
+
+  <div class="content2">
+    <div class="container2">
+        <div class="container-time">
+            <h2 class="heading"> Price List </h2>
+            <hr px="4px" color="white"> <br><br><br><br>
+            <li> ROOM 1- 3,500 Pesos for Couple</li> <br>
+            <li> ROOM 2- 5,000 Pesos for 5 persons</li> <br>
+            <li> ROOM 3- 6,500 Pesos for 7 persons</li> <br>
+            <li> Cottage 1- 3,000 Pesos Per Family</li> <br>
+            <li> Cottage 2- 2,000 Pesos Per Family</li> <br>
+            <li> Bangka 250 Pesos per head for tour in the white sand </li> <br>
+            <br><br><br><br><br><br>
+        
+    </div>
+ </div>
+</div>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }   
+</script>
+</div>
+<h1>Location google map of the Beach Resort </h1>
+<div class="content3">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.6743895426943!2d120.62033798303587!3d14.035933338320593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd96808ea0650d%3A0x94085915e7822a58!2sMc%20Dom&#39;s%20Grill%20and%20Activity%20Resort!5e0!3m2!1sen!2sph!4v1682161900103!5m2!1sen!2sph"
+        width="500px" height="500px" style="border:2px;" allowfullscreen="" loading="fast"
+        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+       
+    
+</div>

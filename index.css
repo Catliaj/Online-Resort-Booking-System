@@ -1,0 +1,271 @@
+body{
+    background-image: url(index.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+img{
+  width:700px;
+  height:500px;
+}
+h1{
+  text-align: center;
+  background-color: #5adaff;
+  height: fit-content;
+  width: 100%;
+}
+.header{
+  width:100%;
+  height:200px;
+}
+#header{
+    text-align: center;
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+}
+
+.season{
+	height: 25vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+p {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Luckiest Guy", cursive;
+	font-size: 50px;
+	letter-spacing: 0.7rem;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	text-align: center;
+	mix-blend-mode: multiply;
+	text-shadow: -5px 5px 0px black, -10px 10px 0px white, -20px 20px 0px purple;
+}
+
+.three {
+	background: url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNzA5MDU2NQ&ixlib=rb-1.2.1&q=85");
+	background-position: bottom left;
+	background-size: cover;
+}
+
+.navbar{
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0000ff;
+    height: fit-content;
+    width: fit-content;
+}
+#column{
+  background-color: rgb(0, 81, 128);
+  width:fit-content;
+  height: fit-content;
+  display:flex;
+  flex-wrap: row;
+  align-content: center;
+}
+.content1{
+    background-color: #ffff;
+    width: fit-content;
+    height:100%;
+    margin: auto;
+    
+}
+
+.content2{
+  background-color: #fff;
+  width:650px;
+  height:500px;
+  margin: auto;
+  
+}
+
+.content3{
+  background-color: #fff;
+  width:650px;
+  height:500px;
+  margin: auto;
+}
+
+
+
+
+/* slideshow code */ 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.text{
+  background-color: #ffff;
+  width: fit-content;
+  color: #000;
+}
+
+
+
+button{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  width: 200px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.container2{
+  width:auto;
+  height:500px;
+}
+
+.content3{
+  background-image: white;
+  width: fit-content;
+  height: fit-content;
+}
+
+.container-time{
+  background-color: black;
+  padding: 50px;
+  outline: 3px dashed rgba(234, 238, 2, 0.973);
+  outline-offset: -30px;
+  text-align: center;
+}
+
+
+h2{
+  color:#fff;
+}
+
+li{
+  size: 40px;
+  color:#fff;
+}
